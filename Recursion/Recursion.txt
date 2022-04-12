@@ -1,0 +1,25 @@
+Ways to Share Information To Function Copies in Recursion?
+1. Global Variables
+2. Reference Variables
+
+Way to pass Information To Function Copies in Recursion? //MOST IMPORTANT
+ANS:
+//base case
+if(base case is true) return something
+else return something
+
+//caller
+if 'something' is satisfied? if YES 'return it'(END)
+else continue;
+
+//COUNTING LOGIC IN RECURSION
+
+if(base case is true) return 1
+else return 0
+
+//2 Recursion calls
+left=call()
+right=call()
+return left+right;
+
+if(n recursion calls) for(i=0 -> n) sum+=call()
