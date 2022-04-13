@@ -1,0 +1,16 @@
+1.
+* From going left to right base condition will be different.
+* From going Right to left base condition will be different.
+* When doing sum like this "num+fun(v,index)" then base condition will be different.
+* When doing sum like this "fun(num+v[index])" then base condition will be different.
+
+2. When Doing sum like "num+fun(v,index)" then program will go into depth of recursion tree, hit the base case
+   and starts building the solution and on the root we will get out final solution.
+
+3. when doing fun(num+v[index]) then program will keep building the solution while going into depth.
+
+4. Always put condition when (in case of +ive sum) sum>target or (in case of -ive sum)sum<target otherwise there is a chance of accessing illegal memory area which leads to undesirable results.
+
+5. While counting do check in base case if we need to get into the root of the tree otherwise we will get undesirable results. (TARGET SUM - Take you forward).
+
+6. if we hit the target==sum at depth of tree then there is a chance of getting -ive indexes while applying DP, so in such case more preferable way is to hit target==0 at depth.

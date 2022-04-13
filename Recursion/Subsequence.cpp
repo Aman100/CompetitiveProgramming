@@ -17,6 +17,6 @@ subsequences(index+1,v,res);
 
 int main()
 {
-vector<int> v={1,2,3,4}, res;
+vector<int> v={1,2,0}, res;
 subsequences(0,v,res);
 }
