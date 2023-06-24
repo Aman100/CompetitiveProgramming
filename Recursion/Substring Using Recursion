@@ -1,0 +1,26 @@
+#include <bits/stdc++.h>
+using namespace std;
+/*
+In Subsequence: If we take and element then we can take another element after k skips.
+In Substring: If we take an element then we can only take adjacent element after it. (i.e. no skips)
+*/
+void substring(string &s, string &res, int prevIndex, int currIndex)
+{
+if(currIndex==s.size())
+{
+return;
+}
+if(prevIndex==-1 || currIndex-prevIndex==1)
+{
+res+=s[currIndex];
+substring(s,res,currIndex,currIndex+1);
+res.pop_back();
+}
+substring(s,res,prevIndex,currIndex+1);
+}
+
+int main()
+{
+string s="abcde", res;
+substring(s,res,-1,0);
+}
