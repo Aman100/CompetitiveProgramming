@@ -8,6 +8,7 @@ void substring(string &s, string &res, int prevIndex, int currIndex)
 {
 if(currIndex==s.size())
 {
+cout<<res<<endl;
 return;
 }
 if(prevIndex==-1 || currIndex-prevIndex==1)
