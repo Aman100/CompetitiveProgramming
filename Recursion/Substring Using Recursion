@@ -1,7 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 /*
-In Subsequence: If we take and element then we can take another element after k skips.
+In Subsequence: If we take an element then we can take another element after k skips.
 In Substring: If we take an element then we can only take adjacent element after it. (i.e. no skips)
 */
 void substring(string &s, string &res, int prevIndex, int currIndex)
